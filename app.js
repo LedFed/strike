@@ -8,9 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     let burger = document.querySelector('.menu');
-    let navigation = document.querySelector('.navigation_item');
+    let navigation = document.querySelector('.nav');
     let header = document.querySelector('header');
     let number = document.querySelector('.number');
+    let checker = burger.querySelector('input[type=checkbox]');
 
     burger.addEventListener('change', () => {
         event.preventDefault();
@@ -23,8 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 navigation.classList.remove('active');
                 number.classList.remove('active');
                 burger.classList.remove('active');
+                header.classList.remove('active');
                 checker.checked = false;
-                header.classList.remove('active')
+
             })
         });
     })

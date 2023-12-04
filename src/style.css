@@ -530,6 +530,7 @@ header a {
   border-radius: 50%;
   animation: jumpMap 2s infinite;
   display: none;
+  z-index: 1;
 }
 .btn_info img {
   height: -webkit-fill-available;
@@ -900,6 +901,7 @@ footer .social_links {
   .subtitle_text {
     font-size: 20px;
     padding: 20px 0 50px;
+    text-shadow: 7px 6px 9px rgba(0, 0, 0, 0.6);
   }
   .social_links {
     margin-top: 70px;
@@ -975,7 +977,7 @@ footer .social_links {
     width: 95%;
   }
   footer .containter {
-    row-gap: 20px;
+    row-gap: 30px;
     padding-top: 30px;
     padding-bottom: 40px;
   }
@@ -992,5 +994,9 @@ footer .social_links {
   }
   .btn_info {
     left: 5px;
+  }
+  .accordion button .accordion-title {
+    font-size: 22px;
+    letter-spacing: 0.2px;
   }
 }
